@@ -5,6 +5,7 @@ class MatriculaCreate(BaseModel):
     disciplina_id: int
 
 class MatriculaResponse(BaseModel):
+    id: int
     aluno_id: int
     disciplina_id: int
 
