@@ -20,4 +20,4 @@ class Disciplina(Base):
     # Relacionamento Reverso: Permite saber a qual curso a disciplina pertence.
     # Ex: minha_disciplina.curso
     curso = relationship("Curso", back_populates="disciplina")
-    alunos = relationship("Aluno", back_populates="curso", cascade="all, delete-orphan")
+    matriculas = relationship("Matricula", back_populates="disciplina")
